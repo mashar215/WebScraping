@@ -183,3 +183,13 @@ git pull origin remote-branch-name
 git push origin local-branch-name
     → ローカルのブランチをリモートブランチに登録する。
 
+git branch -vv 
+    → ローカルブランチがどのアップストリームを対象としているか確認することができる。
+
+git push -u origin local-branch-name:remote-branch-name
+    → ローカルブランチを対象のリモートブランチにプッシュする。
+    → 次回以降はgit push するだけで子のブランチに対してpushすることができる。
+
+    
+
+
