@@ -1,0 +1,17 @@
+WSLとは
+
+WindowsOS上でLinuxの実行環境を実現するサブシステム。
+
+Linuxのプログラムからのシステムコール(APIやファイルアクセスとか)
+をWindowsAPIに変換してLinuxのバイナリを実行する。
+
+LinuxのシステムコールをWindowsのシステムコールに置き換えているってのがみそ。
+
+WSL1とWSL2の違い。
+
+WSL1はLinuxのカーネルを使用しているわけではなく、
+LxCore.sys/Lxss.sysというNTカーネルドライバがLinuxの環境を作っている。
+だから↑の説明はWSL1のこと。
+
+WSL2はHyper-Vの上に仮想マシンを立ち上げて、その中でLinuxカーネルを動かしているので、
+完全なLinuxとして動作している。
